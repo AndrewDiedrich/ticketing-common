@@ -6,7 +6,7 @@ export class RequestValidationError extends CustomError {
   constructor(public errors: ValidationError[]) {
     super('Invalid request parameteres');
 
-    // only because we are extending a built in class
+    // only because we are extending a built in class here
     Object.setPrototypeOf(this, RequestValidationError.prototype);
   }
 

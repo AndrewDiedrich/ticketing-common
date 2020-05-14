@@ -1,3 +1,4 @@
+// standard error for other error classes to extend on
 export abstract class CustomError extends Error {
   abstract statusCode: number;
 
